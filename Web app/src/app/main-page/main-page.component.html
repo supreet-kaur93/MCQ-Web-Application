@@ -1,0 +1,14 @@
+
+  <!---<tr *ngFor="let book of bookslist; let i = index">
+    <th scope="row">{{i}}</th>
+    <td>{{book.bookname}}</td>
+    <td>{{book.authorName}}</td>
+    <td>{{book.isAvailable}}</td>
+    </tr>-->
+    Welcome to main page.
+    <form (ngSubmit) = "CheckIfPresent(bookForm)" ngForm="bookForm">
+      <label> Enter book </label>
+      <input type = "text" name = "bookName" value = "bookName">
+      <button type = "submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id = "result"></div>
